@@ -203,7 +203,7 @@ m
 # Guidelines for users *
 ![](img/guidelines.png)
 
-<i> * Based on how we interprete and aggregate the results</i>
+<i> * Based on how we interpret and aggregate the results</i>
 
 
 ---
