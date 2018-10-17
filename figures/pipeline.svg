@@ -873,16 +873,16 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="3.6445162"
-     inkscape:cx="464.76452"
-     inkscape:cy="82.858757"
+     inkscape:zoom="1.2885311"
+     inkscape:cx="385.60754"
+     inkscape:cy="195.12912"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
      inkscape:window-width="1920"
-     inkscape:window-height="983"
-     inkscape:window-x="1920"
-     inkscape:window-y="27"
+     inkscape:window-height="1163"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
      inkscape:window-maximized="1"
      inkscape:snap-midpoints="false"
      inkscape:snap-smooth-nodes="false"
@@ -1004,14 +1004,14 @@
            x="19.835901"
            sodipodi:role="line">packages</tspan></text>
       <image
-         sodipodi:absref="/home/wouters/thesis/projects/komparo/docs/common_images/logos/R.png"
-         xlink:href="common_images/logos/R.png"
-         width="7.7028995"
-         height="5.9686828"
-         preserveAspectRatio="none"
-         id="image2618"
+         sodipodi:absref="/home/wouters/thesis/projects/komparo/docs/figures/../common_images/logos/R.png"
+         xlink:href="../common_images/logos/R.png"
+         y="106.01006"
          x="10.460397"
-         y="106.01006" />
+         id="image2618"
+         preserveAspectRatio="none"
+         height="5.9686828"
+         width="7.7028995" />
       <g
          inkscape:label="Calque 1"
          id="layer1-6"
@@ -1089,14 +1089,14 @@
            style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.17499995px;line-height:1;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans';text-align:center;text-anchor:middle;stroke-width:0.26458332"
            id="tspan2910-3">Snakemake</tspan></text>
       <image
-         sodipodi:absref="/home/wouters/thesis/projects/komparo/docs/common_images/logos/nextflow.png"
-         xlink:href="common_images/logos/nextflow.png"
-         width="21.081617"
-         height="4.2295399"
-         preserveAspectRatio="none"
-         id="image1395"
+         sodipodi:absref="/home/wouters/thesis/projects/komparo/docs/figures/../common_images/logos/nextflow.png"
+         xlink:href="../common_images/logos/nextflow.png"
+         y="102.32102"
          x="9.6644526"
-         y="102.32102" />
+         id="image1395"
+         preserveAspectRatio="none"
+         height="4.2295399"
+         width="21.081617" />
     </g>
     <path
        style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:round;stroke-opacity:1;marker-end:url(#marker3379);fill-opacity:1"
@@ -1146,14 +1146,14 @@
            sodipodi:role="line"
            id="tspan4329">control</tspan></text>
       <image
-         sodipodi:absref="/home/wouters/thesis/projects/komparo/docs/common_images/logos/git.png"
-         xlink:href="common_images/logos/git.png"
-         width="15.490335"
-         height="6.4672141"
-         preserveAspectRatio="none"
-         id="image4483"
+         sodipodi:absref="/home/wouters/thesis/projects/komparo/docs/figures/../common_images/logos/git.png"
+         xlink:href="../common_images/logos/git.png"
+         y="106.03593"
          x="12.398026"
-         y="106.03593" />
+         id="image4483"
+         preserveAspectRatio="none"
+         height="6.4672141"
+         width="15.490335" />
     </g>
     <g
        id="g2825-1-4-7"
@@ -1193,14 +1193,14 @@
          id="g1088-3"
          transform="translate(-68.271598,71.126729)">
         <image
-           sodipodi:absref="/home/wouters/thesis/projects/komparo/docs/common_images/logos/github.png"
-           xlink:href="common_images/logos/github.png"
-           y="33.997356"
-           x="79.176315"
-           id="image1002-5"
-           preserveAspectRatio="none"
+           sodipodi:absref="/home/wouters/thesis/projects/komparo/docs/figures/../common_images/logos/github.png"
+           xlink:href="../common_images/logos/github.png"
+           width="19.961275"
            height="8.1841221"
-           width="19.961275" />
+           preserveAspectRatio="none"
+           id="image1002-5"
+           x="79.176315"
+           y="33.997356" />
       </g>
     </g>
     <path
@@ -1258,14 +1258,14 @@
            sodipodi:role="line"
            id="tspan5559">integration</tspan></text>
       <image
-         sodipodi:absref="/home/wouters/thesis/projects/komparo/docs/common_images/logos/travis.png"
-         xlink:href="common_images/logos/travis.png"
-         width="21.477406"
-         height="6.7242346"
-         preserveAspectRatio="none"
-         id="image5681"
+         sodipodi:absref="/home/wouters/thesis/projects/komparo/docs/figures/../common_images/logos/travis.png"
+         xlink:href="../common_images/logos/travis.png"
+         y="105.76865"
          x="9.8575926"
-         y="105.76865" />
+         id="image5681"
+         preserveAspectRatio="none"
+         height="6.7242346"
+         width="21.477406" />
     </g>
     <path
        style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#marker4229-1-4)"
@@ -1481,14 +1481,14 @@
            x="19.67321"
            sodipodi:role="line">environment</tspan></text>
       <image
-         sodipodi:absref="/home/wouters/thesis/projects/komparo/docs/common_images/logos/docker.png"
-         xlink:href="common_images/logos/docker.png"
-         width="19.820137"
-         height="5.1385541"
-         preserveAspectRatio="none"
-         id="image2978"
+         sodipodi:absref="/home/wouters/thesis/projects/komparo/docs/figures/../common_images/logos/docker.png"
+         xlink:href="../common_images/logos/docker.png"
+         y="135.30988"
          x="9.8197269"
-         y="135.30988" />
+         id="image2978"
+         preserveAspectRatio="none"
+         height="5.1385541"
+         width="19.820137" />
       <text
          id="text2191-1-5-6"
          y="145.19608"
@@ -1740,15 +1740,15 @@
         </g>
       </g>
       <image
-         sodipodi:absref="/home/wouters/thesis/projects/komparo/docs/common_images/logos/singularity.png"
-         xlink:href="common_images/logos/singularity.png"
-         style="stroke-width:7.42500782"
-         width="5.6444383"
-         height="5.7014527"
-         preserveAspectRatio="none"
-         id="image21069"
+         sodipodi:absref="/home/wouters/thesis/projects/komparo/docs/figures/../common_images/logos/singularity.png"
+         xlink:href="../common_images/logos/singularity.png"
+         y="141.21202"
          x="9.0977259"
-         y="141.21202" />
+         id="image21069"
+         preserveAspectRatio="none"
+         height="5.7014527"
+         width="5.6444383"
+         style="stroke-width:7.42500782" />
     </g>
     <g
        id="g1928"
@@ -4187,15 +4187,15 @@
            sodipodi:role="line"
            id="tspan3365-9-1">Container orchestration</tspan></text>
       <image
-         sodipodi:absref="/home/wouters/thesis/projects/komparo/docs/common_images/logos/kubernetes.png"
-         xlink:href="common_images/logos/kubernetes.png"
-         y="98.558617"
-         x="8.8163509"
-         id="image9208"
-         preserveAspectRatio="none"
-         height="5.7762504"
+         sodipodi:absref="/home/wouters/thesis/projects/komparo/docs/figures/../common_images/logos/kubernetes.png"
+         xlink:href="../common_images/logos/kubernetes.png"
+         style="stroke-width:5.4673295"
          width="26.744194"
-         style="stroke-width:5.4673295" />
+         height="5.7762504"
+         preserveAspectRatio="none"
+         id="image9208"
+         x="8.8163509"
+         y="98.558617" />
     </g>
     <text
        xml:space="preserve"
@@ -4240,14 +4240,14 @@
            y="194.83322"
            style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.17499995px;line-height:1;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans';text-align:center;text-anchor:middle;stroke-width:0.26458332">Continuous integration</tspan></text>
       <image
-         sodipodi:absref="/home/wouters/thesis/projects/komparo/docs/common_images/logos/jenkins.png"
-         xlink:href="common_images/logos/jenkins.png"
-         width="28.074839"
-         height="21.056129"
-         preserveAspectRatio="none"
-         id="image1894"
+         sodipodi:absref="/home/wouters/thesis/projects/komparo/docs/figures/../common_images/logos/jenkins.png"
+         xlink:href="../common_images/logos/jenkins.png"
+         y="190.94205"
          x="162.86246"
-         y="190.94205" />
+         id="image1894"
+         preserveAspectRatio="none"
+         height="21.056129"
+         width="28.074839" />
     </g>
     <g
        id="g2825-1-4-7-6-9"
@@ -4290,25 +4290,25 @@
            sodipodi:role="line"
            id="tspan2804">Static web host</tspan></text>
       <image
-         sodipodi:absref="/home/wouters/thesis/projects/komparo/docs/common_images/logos/aws.png"
-         xlink:href="common_images/logos/aws.png"
-         y="107.33734"
-         x="12.452933"
-         id="image9692-3"
-         preserveAspectRatio="none"
-         height="5.9013705"
+         sodipodi:absref="/home/wouters/thesis/projects/komparo/docs/figures/../common_images/logos/aws.png"
+         xlink:href="../common_images/logos/aws.png"
+         style="stroke-width:9.03854847"
          width="16.185724"
-         style="stroke-width:9.03854847" />
-      <image
-         sodipodi:absref="/home/wouters/thesis/projects/komparo/docs/common_images/logos/github_pages.png"
-         xlink:href="common_images/logos/github_pages.png"
-         y="103.94689"
-         x="12.452933"
-         id="image9816-6"
+         height="5.9013705"
          preserveAspectRatio="none"
-         height="3.3904512"
+         id="image9692-3"
+         x="12.452933"
+         y="107.33734" />
+      <image
+         sodipodi:absref="/home/wouters/thesis/projects/komparo/docs/figures/../common_images/logos/github_pages.png"
+         xlink:href="../common_images/logos/github_pages.png"
+         style="stroke-width:6.13897419"
          width="18.159025"
-         style="stroke-width:6.13897419" />
+         height="3.3904512"
+         preserveAspectRatio="none"
+         id="image9816-6"
+         x="12.452933"
+         y="103.94689" />
     </g>
     <g
        id="g2825-1-4-7-6-9-1"
@@ -4351,25 +4351,25 @@
            sodipodi:role="line"
            id="tspan5559-62-3">Versioning</tspan></text>
       <image
-         sodipodi:absref="/home/wouters/thesis/projects/komparo/docs/common_images/logos/zenodo.png"
-         xlink:href="common_images/logos/zenodo.png"
-         y="102.61221"
-         x="13.816261"
-         id="image2905"
-         preserveAspectRatio="none"
-         height="5.9299016"
+         sodipodi:absref="/home/wouters/thesis/projects/komparo/docs/figures/../common_images/logos/zenodo.png"
+         xlink:href="../common_images/logos/zenodo.png"
+         style="stroke-width:17.84740257"
          width="14.824753"
-         style="stroke-width:17.84740257" />
-      <image
-         sodipodi:absref="/home/wouters/thesis/projects/komparo/docs/common_images/logos/figshare.png"
-         xlink:href="common_images/logos/figshare.png"
-         y="109.38595"
-         x="12.321503"
-         id="image3061"
+         height="5.9299016"
          preserveAspectRatio="none"
-         height="5.0838003"
+         id="image2905"
+         x="13.816261"
+         y="102.61221" />
+      <image
+         sodipodi:absref="/home/wouters/thesis/projects/komparo/docs/figures/../common_images/logos/figshare.png"
+         xlink:href="../common_images/logos/figshare.png"
+         style="stroke-width:20.6095829"
          width="16.432484"
-         style="stroke-width:20.6095829" />
+         height="5.0838003"
+         preserveAspectRatio="none"
+         id="image3061"
+         x="12.321503"
+         y="109.38595" />
     </g>
   </g>
 </svg>
