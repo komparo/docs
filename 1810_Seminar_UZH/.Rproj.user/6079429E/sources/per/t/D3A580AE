@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1539592411147.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1783326358",
+    "id" : "D3A580AE",
+    "lastKnownWriteTime" : 1539765545,
+    "last_content_update" : 1539765545744,
+    "path" : "~/thesis/projects/komparo/docs/1810_Seminar_UZH/presentation.Rmd",
+    "project_path" : "presentation.Rmd",
+    "properties" : {
+        "chunk_output_type" : "console",
+        "cursorPosition" : "271,0",
+        "scrollLine" : "251"
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}

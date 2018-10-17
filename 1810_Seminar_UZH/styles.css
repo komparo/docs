@@ -1,0 +1,176 @@
+/* footer */
+
+.remark-slide-content .footer {
+    position: absolute;
+    bottom: 1rem;
+}
+
+
+
+/* picture sizes */
+.remark-slide-content img {
+  display: block;
+  margin: 0px auto;
+  vertical-align: middle;
+  width:100%;
+  object-fit: contain; /* VERY IMPORTANT, so that it fits the box */
+}
+
+.remark-slide-content img.inline {
+  display: inline;
+  width: initial;
+}
+
+/* adapt the heading */
+.remark-slide-content h1 {
+  white-space: nowrap;
+}
+
+
+/* leaflet widget */
+.leaflet {
+  float:left;
+}
+
+
+
+/* fix scaling of embeds and iframes */
+embed, iframe {
+  width: 150%;
+  height:150%;
+  transform: scale(0.666666);
+  transform-origin: 0 0;
+}
+
+
+/* Text styles */
+
+.wavy {
+  text-decoration: line-through;
+  text-decoration-style: wavy;
+  text-decoration-color: #FF0000AA
+}
+
+
+.statement {
+  text-align:center;
+  font-size:1.2em;
+}
+
+
+.url, a {
+  color: #222222;
+  text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Pic without borders */
+.reveal section img {
+  border: 0;
+  background: #FFF;
+  box-shadow:0 0;
+}
+
+/* left and right */
+#left {
+  left:-8.33%;
+  text-align: left;
+  float: left;
+  width:50%;
+  z-index:-10;
+}
+
+#right {
+  left:31.25%;
+  top: 75px;
+  float: right;
+  text-align: right;
+  z-index:-10;
+  width:50%;
+}
+
+
+
+
+
+.mini-picture img{
+  max-width:50px;
+  max-height:50px !important;
+  vertical-align:middle;
+}
+
+.medium-picture img{
+  max-width:150px;
+  max-height:150px !important;
+  vertical-align:middle;
+}
+
+.large-picture img{
+  max-width:300px;
+  max-height:300px !important;
+  vertical-align:middle;
+}
+
+.title-picture img{
+  max-height:100px !important;
+  vertical-align:middle;
+}
+
+img{
+  max-height:500px !important;
+}
+
+/* align td middle */
+.reveal td {
+  vertical-align: middle;
+}
+
+
+
+/* dark background */
+section.dark h2 {
+  color:white;
+}
+
+.dark {
+  color:white;
+  text-shadow:
+   -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+}
+
+/* grey background */
+
+section.grey h1 {
+  color:white;
+  text-shadow: -3px 0 2px black, 0 3px 2px black, 3px 0 2px black, 0 -3px 2px black;
+}
+
+
+
+/* code size */
+code.r {
+  font-size:0.8em;
+  line-height:1em;
+}
+
+
+/* slide background */
+html.dark-background div.present .slide-background {
+    opacity: 0.4 !important;
+}

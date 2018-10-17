@@ -1,0 +1,128 @@
+---
+title: "Democratic & continuous benchmarking"
+author: "Using modern technologies"
+date: 
+output: 
+  revealjs::revealjs_presentation:
+    theme: white
+    transition: fade
+    css: styles.css
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r, include=FALSE}
+library(tidyverse)
+library(knitr)
+library(glue)
+library(cowplot)
+
+mini_picture <- function(picture) {
+  glue("<span class='mini-picture'>![picture](img/{picture})</span>")
+}
+medium_picture <- function(picture) {
+  glue("<span class='medium-picture'>![picture](img/{picture})</span>")
+}
+large_picture <- function(picture) {
+  glue("<span class='large-picture'>![picture](img/{picture})</span>")
+}
+title_picture <- function(picture) {
+  glue("<span class='title-picture'>![picture](img/{picture})</span>")
+}
+```
+
+# `r large_picture("dynbenchmark.png")` & `r medium_picture("dyno1.png")`
+
+## `r title_picture("dynbenchmark.png")`
+
+![](img/dynbenchmark_overview.png)
+
+Fully shared project between Robrecht Cannoodt and me
+
+## `r medium_picture("dyno1.png")`
+
+```r
+models <- dynwrap::infer_trajectories(
+  dataset, 
+  c("paga", "slingshot", "monocle_ddrtree", "raceid_stemid", "scuba", "pcreode")
+)
+map(models$model, dynplot::plot_dimred) %>% patchwork::wrap_plots()
+```
+
+![](img/example_predictions.png)
+
+## `r medium_picture("dyno1.png")`
+
+![](img/toolkit.png)
+
+##
+![](img/singlecell_technologies_v6.svg)
+
+
+# The goal of...
+
+## Komparo
+- Esperanto for "compare"
+- Esperanto is meant to democratise language, it fits!
+- Also *happens* to be the only decent organisation name available on github
+
+## The goal of komparo
+
+![](img/goal.svg)
+
+## Requirements
+
+Summarised in a few buzz words
+
+> - Modular, *one-click extendable*
+> - Reproducible, *one-click and it runs!*
+> - Democratic, *decentralised*
+> - Testable, *assure it works and stays working*
+> - Continuously integrated, *no-click testing*
+> - Deployable to users, *one-click run*
+
+## Previous work
+
+Several projects with protein/RNA structure prediction, such as **CompaRNA**
+
+- Modular ✘
+- Reproducible ✘
+- Democratic ✘
+- Testable ✘
+- Continuously integrated ✘
+- Deployable to users ✘
+
+## Previous work
+
+**Dynamic Statistical Comparisons** - a "workflow" management system for comparisons
+
+**SummarizedBenchmark**
+
+- Modular ✔️
+- Reproducible ✔️
+- Democratic ±
+- Testable ✘
+- Continuously integrated ✘
+- Deployable to users ✘
+
+## Proposed pipeline
+
+![pipeline](img/pipeline.svg)
+
+## First test: Differential expression in trajectories
+
+- Several methods already available
+- Simulator is ready
+- Off-the-shelf metrics
+- Highly useful for users
+  
+## Second test: Trajectory synchronisation
+  
+- Several methods already available
+- Simulator can be adapted
+- Some custom metrics
+- Highly useful for users
+
+## But first...
+
+finish the trajectory benchmark! Almost there!

@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>presentation.utf8.md</title>
+    <meta charset="utf-8">
+    <link href="presentation_files/remark-css-0.0.1/metropolis.css" rel="stylesheet" />
+    <link href="presentation_files/remark-css-0.0.1/metropolis-fonts.css" rel="stylesheet" />
+    <script src="presentation_files/htmlwidgets-1.2/htmlwidgets.js"></script>
+    <script src="presentation_files/jquery-1.12.4/jquery.min.js"></script>
+    <link href="presentation_files/leaflet-1.3.1/leaflet.css" rel="stylesheet" />
+    <script src="presentation_files/leaflet-1.3.1/leaflet.js"></script>
+    <link href="presentation_files/leafletfix-1.0.0/leafletfix.css" rel="stylesheet" />
+    <script src="presentation_files/Proj4Leaflet-1.0.1/proj4-compressed.js"></script>
+    <script src="presentation_files/Proj4Leaflet-1.0.1/proj4leaflet.js"></script>
+    <link href="presentation_files/rstudio_leaflet-1.3.1/rstudio_leaflet.css" rel="stylesheet" />
+    <script src="presentation_files/leaflet-binding-2.0.2/leaflet.js"></script>
+    <link href="presentation_files/leaflet-easybutton-1.3.1/easy-button.css" rel="stylesheet" />
+    <script src="presentation_files/leaflet-easybutton-1.3.1/easy-button.js"></script>
+    <script src="presentation_files/leaflet-easybutton-1.3.1/EasyButton-binding.js"></script>
+    <link href="presentation_files/fontawesome-4.7.0/font-awesome.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+
+
+class: title-slide center
+
+
+&lt;i&gt; An attempt at doing &lt;/i&gt;
+
+&lt;h1&gt; Continuous &amp; collaborative benchmarking &lt;/h1&gt;
+
+&lt;h2&gt; Wouter Saelens &lt;/h2&gt;
+&lt;h3&gt;Visiting PhD student at Robinson lab&lt;/h3&gt;
+&lt;h3&gt;PhD student at Saeys lab (VIB - Ghent University)&lt;/h3&gt;
+
+&lt;div class = "footer"&gt;
+&lt;img src="img/ghent_university.png" style = "width:100px;" class="inline"&gt;
+&lt;img src="img/vib.gif" style = "width:100px;" class="inline"&gt;
+&lt;img src="img/uzh.png" style = "width:100px;" class="inline"&gt;
+&lt;/div&gt;
+
+---
+
+
+
+# Single-cell bioinformatics in Ghent
+
+&lt;div style = "float:left"&gt;
+
+<div id="htmlwidget-f62226f0e3dde2ff94ea" style="width:300px;height:250px;" class="leaflet html-widget"></div>
+<script type="application/json" data-for="htmlwidget-f62226f0e3dde2ff94ea">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"http://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"http://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]},{"method":"addMarkers","args":[51.0092853,3.7053699,{"icon":"home","library":"glyphicon","markerColor":"blue","iconColor":"white","spin":false,"squareMarker":false,"iconRotate":0,"font":"monospace"},null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":0,"riseOnHover":false,"riseOffset":250},null,null,null,null,"Cool place",{"interactive":false,"permanent":true,"direction":"left","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]},{"method":"addMarkers","args":[47.393241,8.550887,[],null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":0,"riseOnHover":false,"riseOffset":250},null,null,null,null,"Also cool place",{"interactive":false,"permanent":true,"direction":"right","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]},{"method":"addEasyButton","args":[{"icon":"fa-crosshairs","title":"Locate Me","onClick":"  function(btn, map) {\n    map.flyTo(\n      [51.0092853, 3.7053699],\n      12,\n      {\n        animate: true,\n        duration: 20\n      }\n    );\n  }                      ","position":"topleft"}]}],"limits":{"lat":[47.393241,51.0092853],"lng":[3.7053699,8.550887]},"setView":[[-50.903033,-175.540349],2,[]]},"evals":["calls.3.args.0.onClick"],"jsHooks":[]}</script>
+&lt;br&gt;
+&lt;br&gt;
+
+&lt;img style = "float:left;width:300px" src="img/ghent.jpg"&gt;
+
+&lt;/div&gt;
+
+&lt;div style = "float:right;"&gt; 
+&lt;img src="img/group_photo.jpg" style="width:500px;"&gt;
+
+&lt;/div&gt; 
+
+---
+
+# Single-cell bioinformatics in Ghent
+![](img/group_projects.svg)
+
+---
+
+# Trajectory inference
+
+![](img/linear.png)
+
+---
+
+# Trajectory inference
+
+![](img/bifurcating.png)
+
+---
+
+# Trajectory inference
+
+![](img/tree.png)
+
+---
+
+# Trajectory inference
+
+![](img/cycle.png)
+
+---
+
+# Trajectory inference
+
+![](img/looping.png)
+
+---
+
+# Trajectory inference
+
+![](img/trajectories.jpg)
+
+&gt; Computational methods for trajectory inference from single-cell transcriptomics.
+&lt;strong&gt; Robrecht Cannoodt\* &lt;/strong&gt; &lt;a href='https://orcid.org/0000-0003-3641-729X'&gt;&lt;img src='https://github.com/dynverse/dynmethods/raw/master/man/figures/orcid_logo.svg?sanitize=true' height='16'  class="inline"&gt;&lt;/a&gt; &lt;a href='https://github.com/rcannood'&gt;&lt;img src='https://github.com/dynverse/dynmethods/raw/master/man/figures/github_logo.png' height='16' class="inline"&gt;&lt;/a&gt; &lt;strong&gt; Wouter Saelens\* &lt;/strong&gt; &lt;a href='https://orcid.org/0000-0002-7114-6248'&gt;&lt;img src='https://github.com/dynverse/dynmethods/raw/master/man/figures/orcid_logo.svg?sanitize=true' height='16' class="inline"&gt;&lt;/a&gt; &lt;a href='https://github.com/zouter'&gt;&lt;img src='https://github.com/dynverse/dynmethods/raw/master/man/figures/github_logo.png' height='16'  class="inline"&gt;&lt;/a&gt;,
+&lt;em&gt; Yvan Saeys &lt;/em&gt; &lt;a href='https://github.com/saeyslab'&gt;&lt;img src='https://github.com/dynverse/dynmethods/raw/master/man/figures/github_logo.png' height='16' class="inline"&gt;&lt;/a&gt;   [doi:10.1002/eji.201646347](https://doi.org/10.1002/eji.201646347)
+
+---
+
+# Trajectory inference
+
+![](img/n_tools_over_time.png)
+
+---
+
+# Benchmarking trajectory inference
+&lt;img src="img/overview_evaluation.svg" style="max-height:350px!important"&gt;
+
+--
+
+&gt; A comparison of single-cell trajectory inference methods: towards more accurate and robust tools  
+&lt;strong&gt; Wouter Saelens\* &lt;/strong&gt; &lt;a href='https://orcid.org/0000-0002-7114-6248'&gt;&lt;img src='https://github.com/dynverse/dynmethods/raw/master/man/figures/orcid_logo.svg?sanitize=true' height='16' class="inline"&gt;&lt;/a&gt; &lt;a href='https://github.com/zouter'&gt;&lt;img src='https://github.com/dynverse/dynmethods/raw/master/man/figures/github_logo.png' height='16'  class="inline"&gt;&lt;/a&gt;,&lt;strong&gt; Robrecht Cannoodt\* &lt;/strong&gt; &lt;a href='https://orcid.org/0000-0003-3641-729X'&gt;&lt;img src='https://github.com/dynverse/dynmethods/raw/master/man/figures/orcid_logo.svg?sanitize=true' height='16'  class="inline"&gt;&lt;/a&gt; &lt;a href='https://github.com/rcannood'&gt;&lt;img src='https://github.com/dynverse/dynmethods/raw/master/man/figures/github_logo.png' height='16' class="inline"&gt;&lt;/a&gt;,Helena Todorov &lt;a href='https://github.com/Helena-todd'&gt;&lt;img src='https://github.com/dynverse/dynmethods/raw/master/man/figures/github_logo.png' height='16' class="inline"&gt;&lt;/a&gt;,
+&lt;em&gt; Yvan Saeys &lt;/em&gt; &lt;a href='https://github.com/saeyslab'&gt;&lt;img src='https://github.com/dynverse/dynmethods/raw/master/man/figures/github_logo.png' height='16' class="inline"&gt;&lt;/a&gt;  
+[bioRxiv:276907](https://www.biorxiv.org/content/early/2018/03/05/276907) [doi:10.1101/276907](https://doi.org/10.1101/276907)
+
+--
+
+&lt;div class="statement"&gt;&gt;&gt; &lt;a href="https://benchmark.dynverse.org"&gt;benchmark.dynverse.org&lt;/a&gt; &lt;&lt; &lt;/div&gt;
+
+
+---
+
+# Quality control
+
+&lt;iframe src = "https://docs.google.com/spreadsheets/d/1Mug0yz8BebzWt8cmEW306ie645SBh_tDHwjVw4OFhlE/edit#gid=434813653"&gt;&lt;/iframe&gt;
+
+
+---
+
+# Discussion with authors
+
+&lt;iframe src = "img/paga.html"&gt;&lt;/iframe&gt;
+
+
+---
+
+# Probabilistic trajectory model
+![](img/probabilistic_model.svg)
+
+---
+
+# Benchmarking metrics
+![](img/metrics.svg)
+
+---
+
+# Trajectory topology types
+![](img/trajectory_types.svg)
+
+---
+
+# Results can be... overwhelming
+
+&lt;embed src="img/results_summary.pdf#toolbar=0&amp;navpanes=0&amp;scrollbar=0" width="800" height="500" 
+ type='application/pdf'&gt;
+
+
+---
+
+# Results can be... overwhelming
+
+&lt;embed src="img/results_detailed.pdf#toolbar=0&amp;navpanes=0&amp;scrollbar=0" width="800" height="500" 
+ type='application/pdf'&gt;
+
+---
+
+# Guidelines for users *
+![](img/guidelines.png)
+
+&lt;i&gt; * Based on how we interprete and aggregate the results&lt;/i&gt;
+
+
+---
+
+# Guidelines for users
+
+&lt;iframe src = "http://guidelines.dynverse.org/"&gt;&lt;/iframe&gt;
+
+---
+
+# Doing trajectory inference
+
+&lt;img src="img/dyno.gif" style="display: block;margin-left: auto;margin-right: auto;max-width:100px;"&gt;  
+
+&lt;img src="img/toolkit.png"&gt;
+
+&lt;div class="statement"&gt;&lt;a href="https://dyno.dynverse.org" class="url statement"&gt;dyno.dynverse.org&lt;/a&gt;&lt;/div&gt;
+
+---
+
+# My current goal
+
+&lt;div class="statement"&gt;Integrate methods for trajectory differentially expressed genes/features&lt;/div&gt;
+
+&lt;img src="img/de.png" style="width:400px"&gt;
+
+---
+
+# Some limitations of our study
+
+- **Authoritative**
+
+&gt; What with _alternative_ but _sensible_ interpretations?
+
+--
+
+- **Rapidly outdated**
+
+&gt; What if a new method comes along next week which _outperforms everything_?
+
+--
+
+- **Hard to adapt and extend**
+
+&gt; What if you want to add just one metric, would I need to _delve into this huge codebase_ and start _rerunning everything_?
+
+--
+
+- **This comes too late**
+
+&gt; It should have been published _before 60 methods were created_ (each with their own small benchmark) 
+
+--
+
+&lt;p style="text-align:center;font-size:1.5em;"&gt;&lt;i&gt;Can we improve upon this? &lt;/i&gt;&lt;/p&gt;
+
+---
+
+
+
+# Some &lt;span class="wavy"&gt;nice&lt;/span&gt; great attempts already
+
+- **SummarizedBenchmark** (Rafael Irizarry lab, Bioconductor)
+
+&lt;img src="img/summarizedbenchmark.png" style="width:500px"&gt;
+
+- **Dynamic Statistical Comparison** (Stephens Lab)
+
+```yaml
+DSC:
+  define:
+    simulate: en_sim, sparse, dense
+    analyze: lasso, ridge, en, susie, susie02, susie04, susie05, susie01, susie_auto, varbvs, varbvsmix, BayesC
+    score: pred_err, coef_err
+  run: simulate * analyze * score
+  exec_path: code
+  R_libs: MASS, glmnet, BGLR, varbvs@pcarbo/varbvs/varbvs-r
+```
+
+---
+
+# Some &lt;span class="wavy"&gt;nice&lt;/span&gt; great attempts already
+
+&lt;p class="statement"&gt;These are actually workflow managers, but with a focus on benchmarking.&lt;/p&gt;
+&lt;p class="statement"&gt;And, our trajectory benchmark wouldn't have been possible with these tools...&lt;/p&gt;
+
+- One global environment
+- Not fail-safe
+- Still limited modularity
+- Hard to maintain, as one non-working method breaks the pipeline
+- ...
+
+&lt;p class="statement"&gt;And, to keep it maintainable, several other development tools are necessary, such as continuous integration&lt;/p&gt;
+
+---
+
+# The whole toolbox
+&lt;img src='img/pipeline/pipeline_01_modules.png'&gt;
+---
+# The whole toolbox
+&lt;img src='img/pipeline/pipeline_02_module_start.png'&gt;
+---
+# The whole toolbox
+&lt;img src='img/pipeline/pipeline_03_module_middle.png'&gt;
+---
+# The whole toolbox
+&lt;img src='img/pipeline/pipeline_04_module_end.png'&gt;
+---
+# The whole toolbox
+&lt;img src='img/pipeline/pipeline_05_benchmark.png'&gt;
+---
+# The whole toolbox
+&lt;img src='img/pipeline/pipeline_06_benchmark_pipeline.png'&gt;
+---
+# The whole toolbox
+&lt;img src='img/pipeline/pipeline_07_benchmark_web.png'&gt;
+---
+# The whole toolbox
+&lt;img src='img/pipeline/pipeline_08_benchmark_pull.png'&gt;
+---
+# The whole toolbox
+&lt;img src='img/pipeline/pipeline_09_benchmark_versioning.png'&gt;
+---
+
+# Some food for thought
+
+--
+
+&lt;span class="statement"&gt;Do you think this is feasable?&lt;/span&gt;
+
+--
+
+&lt;span class="statement"&gt;Would you participate in something like this?&lt;/span&gt;
+
+--
+
+&lt;br&gt;
+
+&lt;img src="img/acknowledgements.svg" style="width:500px"&gt;
+
+--
+
+&lt;br&gt;
+
+&lt;table style = "width:100%"&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href="https://dynverse.org"&gt;&lt;svg style="height:0.8em;top:.04em;position:relative;" viewBox="0 0 512 512"&gt;&lt;path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/&gt;&lt;/svg&gt; dynverse.org&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href="https://github.com/dynverse"&gt;&lt;svg style="height:0.8em;top:.04em;position:relative;" viewBox="0 0 496 512"&gt;&lt;path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/&gt;&lt;/svg&gt; dynverse&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href="https://github.com/komparo"&gt;&lt;svg style="height:0.8em;top:.04em;position:relative;" viewBox="0 0 496 512"&gt;&lt;path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/&gt;&lt;/svg&gt; komparo&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href="https://github.com/zouter"&gt;&lt;svg style="height:0.8em;top:.04em;position:relative;" viewBox="0 0 496 512"&gt;&lt;path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/&gt;&lt;/svg&gt; zouter &lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href="https://twitter.com/zouters"&gt;&lt;svg style="height:0.8em;top:.04em;position:relative;" viewBox="0 0 512 512"&gt;&lt;path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/&gt;&lt;/svg&gt; zouters&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+    </textarea>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create();
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function() {
+  var d = document, s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})();</script>
+
+<script>
+(function() {
+  var i, text, code, codes = document.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+})();
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
